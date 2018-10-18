@@ -9,7 +9,6 @@ class CreateProducts < ActiveRecord::Migration[5.1]
       t.string :size
       t.string :colour
       t.references :category, foreign_key: true
-      t.references :line_item, foreign_key: true
 
       t.timestamps
     end
