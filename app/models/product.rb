@@ -5,4 +5,7 @@ class Product < ApplicationRecord
   
   belongs_to :category
   belongs_to :line_item
+
+  validates :name, :brand, :model, :size
+  validates :price, numericality: true
 end
