@@ -1,0 +1,4 @@
+= semantic_form_for @category do |f|
+  = f.input :name
+  = f.input :description, :input_html => { :class => 'autogrow', :rows => 10, :cols => 20, :maxlength => 10  }
+  = f.submit
