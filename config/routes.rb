@@ -1,6 +1,5 @@
 Rails.application.routes.draw do
-
-  devise_for :users, path: '', path_names:{ sign_in: 'login', sign_out: 'logout', sign_up: 'register' }
+  devise_for :users, path: 'admin', path_names:{ sign_in: '', sign_out: 'logout', sign_up: 'register' }
 
   namespace :admin do
     resources :categories
