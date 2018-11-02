@@ -7,7 +7,7 @@ class Admin::BaseController < ApplicationController
 
   def verify_user
     unless current_user && current_user.admin?
-      redirect_to '/'
+      redirect_to categories_path
     end
   end
 end
