@@ -17,7 +17,7 @@ class Admin::CategoriesController < Admin::BaseController
 
     if @category.save
       flash[:notice] = 'Category Successfully created'
-      redirect_to categories_path
+      redirect_to admin_categories_path
     else
       flash[:notice] = 'Category is not created'
       render :new
