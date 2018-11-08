@@ -1,7 +1,7 @@
 class Admin::BaseController < ApplicationController
   before_action :verify_user
 
-  # layout "admin"
+  layout "admin/admin"
 
   private
 
